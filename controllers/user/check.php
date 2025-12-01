@@ -18,7 +18,7 @@ $service = new Google_Service_Sheets($client);
 if(isset($_POST['input_key']) && $_POST['input_key']) $input_key = mb_strtolower($_POST['input_key'],'UTF-8');
 // toast error
 else {
-    toast_create('danger','Vui lòng nhập số điện thoại của bạn');
+    toast_create('danger','Vui lòng nhập số CCCD của bạn');
     route();
 }
 
@@ -80,7 +80,7 @@ foreach ($_SESSION['data'] as $row) {
 
 // route
 if(empty($_SESSION['temp']['result'])) {
-    toast_create('danger','Không tìm thấy thông tin của Số điện thoại này');
+    toast_create('danger','Không tìm thấy thông tin của số CCCD này');
     route();
 }else {
     route('result');
