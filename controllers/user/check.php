@@ -34,7 +34,7 @@ if(empty($_SESSION['data']) || (time() - $_SESSION['temp']['time']) > REQUEST_AP
     // call API get data from GG Sheet
     try {
         // query get
-        $response = $service->spreadsheets_values->get(SHEET_ID, 'Info!A2:I');
+        $response = $service->spreadsheets_values->get(SHEET_ID, 'Info!A2:J');
         
         // get values
         $_SESSION['data'] = $response->getValues(); 

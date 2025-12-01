@@ -70,7 +70,7 @@
                 Hạng phòng
             </div>
             <div class="fw-info fs-4">
-                <?= $_SESSION['temp']['result'][6] ?? '<span class="small fst-italic">(trống)</span>' ?>
+                <?= $_SESSION['temp']['result'][9] ?? '<span class="small fst-italic">(trống)</span>' ?>
             </div>
         </div>
     </div>
