@@ -58,7 +58,7 @@
 }
 
 body {
-    background-image: url('/assets/file/system/background.png');
+    background-image: url('/assets/file/system/bg.png');
     background-size: contain; /* Để ảnh phủ toàn bộ */
     background-repeat: repeat;
     background-position: none;
@@ -71,6 +71,14 @@ body {
     font-family: 'E Bold', sans-serif;
     font-weight: normal;
     overflow-x: hidden;
+}
+
+@media (max-width : 992px) {
+    body {
+        background-image: url('/assets/file/system/bg-mobile.jpg');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
 }
 
 .thank {

@@ -84,7 +84,7 @@
 </div> -->
 
 <div class="col-12 col-md-8 col-lg-4 mt-4 px-2 animate__animated animate__bounceInRight animate__delay-1s">
-    <img class="w-100" src="<?= URL_STORAGE ?>system/timeline.png" alt="timeline.png">
+    <img class="w-100" src="<?= URL_STORAGE ?>system/timeline.jpg" alt="timeline.jpg">
 </div>
 
 <div class="text-center">
