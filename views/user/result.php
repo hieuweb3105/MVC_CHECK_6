@@ -84,11 +84,11 @@
 </div> -->
 
 <div class="col-12 col-md-8 col-lg-4 mt-4 px-2 animate__animated animate__bounceInRight animate__delay-1s">
-    <img class="w-100" src="<?= URL_STORAGE ?>system/timeline_1.png" alt="timeline.png">
+    <img class="w-100" src="<?= URL_STORAGE ?>system/timeline.png" alt="timeline.png">
 </div>
 
 <div class="text-center">
-    <a id="feedback" href="/feedback" class="btn btn-light fs-6 px-4 fw-bold btn my-5">
+    <a id="feedback" href="/feedback" class="btn btn-dark fs-6 px-4 fw-bold btn my-5">
         Đánh giá dịch vụ / Feedback
     </a>
 </div>
