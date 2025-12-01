@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #0198b0;
+    --main-color : #ddd6a7;
+    --main-color-hover : #f0d97b;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6b6b6b;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #424242;
+}
+
+@font-face {
+    font-family: 'E Regular';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Thin';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-THIN.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Bold';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-BOLD.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Bold Oblique';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-BOLDOBLIQUE.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Oblique';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-OBLIQUE.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Demi Bold';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-DEMIBOLD.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Light';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-LIGHT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'E Light Oblique';
+    src: url('/assets/fonts/ELECTROLUXSANSVN-LIGHTOBLIQUE.TTF') format('truetype');
+}
+
+body {
+    background-image: url('/assets/file/system/background.png');
+    background-size: contain; /* Để ảnh phủ toàn bộ */
+    background-repeat: repeat;
+    background-position: none;
+    min-height: 100vh;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'E Bold', sans-serif;
+    font-weight: normal;
+    overflow-x: hidden;
+}
+
+.thank {
+    font-family: 'E Oblique', sans-serif;
+}
+
+.heading-2 {
+    font-family: 'E Demi Bold', sans-serif;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) { /* Tablet */
+    .heading-2 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 992px) { /* Desktop */
+    .heading-2 {
+        font-size: 23px;
+    }
+}
+
+.heading-3 {
+    font-family: 'E Demi Bold', sans-serif;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 768px) { /* Tablet */
+    .heading-3 {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 992px) { /* Desktop */
+    .heading-3 {
+        font-size: 25px;
+    }
+}
+
+.card-result {
+    background-color: #ffffffa8; /* Màu nền với độ trong suốt */
+    backdrop-filter: blur(3px);
+}
+
+#continue, #feedback {
+    animation: bounce 1s infinite;
+    transition: opacity 0.5s ease; /* Thêm hiệu ứng chuyển đổi cho opacity */
+    opacity: 1; /* Đặt opacity ban đầu là 1 */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.color-muted {
+    color: #fafafa;
+}
+
+.color-yellow {
+    color: #f8ca0f;
+}
+
+.shadow-pic {
+    filter: drop-shadow(4px 1px 0 #ffffff);
+}
+
+.text-date {
+    text-transform: uppercase;
+    color: #f2413b;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    filter: drop-shadow(4px 1px 0 #ffffff);
+
+}
+
+#name::placeholder {
+    font-size: 13px;
+}
